@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Code\\Kraken Engine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|solutionrelative:Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\Math.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|solutionrelative:Math.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\Kraken Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|solutionrelative:Kraken Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Math.h",
+              "DocumentMoniker": "E:\\Code\\Kraken Engine\\Math.h",
+              "RelativeDocumentMoniker": "Math.h",
+              "ToolTip": "E:\\Code\\Kraken Engine\\Math.h",
+              "RelativeToolTip": "Math.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-30T14:37:25.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Defines.h",
+              "DocumentMoniker": "E:\\Code\\Kraken Engine\\Defines.h",
+              "RelativeDocumentMoniker": "Defines.h",
+              "ToolTip": "E:\\Code\\Kraken Engine\\Defines.h",
+              "RelativeToolTip": "Defines.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-30T14:26:38.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Kraken Engine.cpp",
+              "DocumentMoniker": "E:\\Code\\Kraken Engine\\Kraken Engine.cpp",
+              "RelativeDocumentMoniker": "Kraken Engine.cpp",
+              "ToolTip": "E:\\Code\\Kraken Engine\\Kraken Engine.cpp",
+              "RelativeToolTip": "Kraken Engine.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-30T14:25:51.39Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
