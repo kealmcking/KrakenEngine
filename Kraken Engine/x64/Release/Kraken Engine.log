@@ -1,0 +1,2 @@
+﻿Kraken Engine.obj : error LNK2001: unresolved external symbol "unsigned int * SCREEN_ARRAY" (?SCREEN_ARRAY@@3PAIA)
+E:\Code\Kraken Engine\x64\Release\Kraken Engine.exe : fatal error LNK1120: 1 unresolved externals

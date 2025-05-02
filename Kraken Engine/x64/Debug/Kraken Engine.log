@@ -1,5 +1,2 @@
-﻿  Defines.h
-  Kraken Engine.cpp
-  Math.h
-  Generating Code...
-  Kraken Engine.vcxproj -> E:\Code\Kraken Engine\x64\Debug\Kraken Engine.exe
+﻿Math.obj : error LNK2005: "unsigned int * SCREEN_ARRAY" (?SCREEN_ARRAY@@3PAIA) already defined in Defines.obj
+E:\Code\Kraken Engine\x64\Debug\Kraken Engine.exe : fatal error LNK1169: one or more multiply defined symbols found

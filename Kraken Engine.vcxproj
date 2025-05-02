@@ -127,9 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Defines.h" />
+    <ClCompile Include="GraphicsMath.cpp" />
     <ClCompile Include="Kraken Engine.cpp" />
     <ClCompile Include="Math.h" />
+    <ClCompile Include="RasterSurface.cpp" />
+    <ClCompile Include="XTime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="GraphicsMath.h" />
+    <ClInclude Include="RasterSurface.h" />
+    <ClInclude Include="XTime.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

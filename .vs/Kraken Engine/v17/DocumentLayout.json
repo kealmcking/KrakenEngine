@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "E:\\Code\\Kraken Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|solutionrelative:Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\Math.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|solutionrelative:Math.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|solutionrelative:Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\GraphicsMath.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|solutionrelative:GraphicsMath.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\GraphicsMath.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|solutionrelative:GraphicsMath.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|solutionrelative:Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80E072CB-4D54-4457-B3B8-A134D8F63743}|Kraken Engine.vcxproj|E:\\Code\\Kraken Engine\\Kraken Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,43 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Math.h",
               "DocumentMoniker": "E:\\Code\\Kraken Engine\\Math.h",
               "RelativeDocumentMoniker": "Math.h",
               "ToolTip": "E:\\Code\\Kraken Engine\\Math.h",
               "RelativeToolTip": "Math.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-30T14:37:25.624Z",
+              "WhenOpened": "2025-05-02T03:13:35.122Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Camera.h",
+              "DocumentMoniker": "E:\\Code\\Kraken Engine\\Camera.h",
+              "RelativeDocumentMoniker": "Camera.h",
+              "ToolTip": "E:\\Code\\Kraken Engine\\Camera.h",
+              "RelativeToolTip": "Camera.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T02:49:11.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GraphicsMath.cpp",
+              "DocumentMoniker": "E:\\Code\\Kraken Engine\\GraphicsMath.cpp",
+              "RelativeDocumentMoniker": "GraphicsMath.cpp",
+              "ToolTip": "E:\\Code\\Kraken Engine\\GraphicsMath.cpp",
+              "RelativeToolTip": "GraphicsMath.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T02:39:33.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GraphicsMath.h",
+              "DocumentMoniker": "E:\\Code\\Kraken Engine\\GraphicsMath.h",
+              "RelativeDocumentMoniker": "GraphicsMath.h",
+              "ToolTip": "E:\\Code\\Kraken Engine\\GraphicsMath.h",
+              "RelativeToolTip": "GraphicsMath.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T02:39:30.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Defines.h",
               "DocumentMoniker": "E:\\Code\\Kraken Engine\\Defines.h",
               "RelativeDocumentMoniker": "Defines.h",
               "ToolTip": "E:\\Code\\Kraken Engine\\Defines.h",
               "RelativeToolTip": "Defines.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIgAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-30T14:26:38.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Kraken Engine.cpp",
               "DocumentMoniker": "E:\\Code\\Kraken Engine\\Kraken Engine.cpp",
               "RelativeDocumentMoniker": "Kraken Engine.cpp",
               "ToolTip": "E:\\Code\\Kraken Engine\\Kraken Engine.cpp",
               "RelativeToolTip": "Kraken Engine.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-30T14:25:51.39Z",
               "EditorCaption": ""
