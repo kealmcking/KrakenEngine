@@ -1,0 +1,6 @@
+# ninja log v6
+10	454	7732032843141267	CMakeFiles/KrakenEngine.dir/main.cpp.obj	63830c56ddf2e154
+95	201	7732034624367983	KrakenEngine.exe	82229eee3ae3e3e4
+16	45	7732032843201279	CMakeFiles/KrakenEngine.dir/source/physics.cpp.obj	cebf35b3e281ac01
+3	15	7732032842844749	clean	8c45b54705a541e8
+4	95	7732034623454176	CMakeFiles/KrakenEngine.dir/include/MathFunctions.cpp.obj	f38efa65be1ab347

@@ -1,0 +1,3 @@
+C:/Users/kealm/Documents/Programming/KrakenEngine/build/KrakenEngine/out/build/x64-debug/CMakeFiles/KrakenEngine.dir
+C:/Users/kealm/Documents/Programming/KrakenEngine/build/KrakenEngine/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/kealm/Documents/Programming/KrakenEngine/build/KrakenEngine/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
