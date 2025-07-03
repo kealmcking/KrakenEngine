@@ -1,5 +1,5 @@
 # KrakenEngine
-3D Game Engine Project
+2D Game Engine
 
 Will focus on the following things:
 
@@ -8,4 +8,4 @@ Mathematics
 Physics
 Gameplay
 
-The engine will support 2D and 3D games, but will focus mainly on 3D.
+Building this in order to show mastery of game engine concepts. Plan is to use it to release a small commercial game.
