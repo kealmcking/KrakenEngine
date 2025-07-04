@@ -1,21 +1,13 @@
-﻿# CMakeList.txt : CMake project for KrakenEngine, include source and define
-# project specific logic here.
-#
-cmake_minimum_required (VERSION 3.8)
+﻿cmake_minimum_required(VERSION 3.8)
+project(SFMLTest)
 
-# Enable Hot Reload for MSVC compilers if supported.
-if (POLICY CMP0141)
-  cmake_policy(SET CMP0141 NEW)
-  set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
-endif()
+set(CMAKE_CXX_STANDARD 17)
 
-project ("KrakenEngine")
+# Set the SFML directory
+set(SFML_DIR "/opt/homebrew/opt/sfml/lib/cmake/SFML")
 
-# Add source to this project's executable.
-add_executable (KrakenEngine "main.cpp" "main.h"  "include/CoreVectors.h" "source/physics.cpp" "include/MathFunctions.cpp")
+# Find SFML
+find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET KrakenEngine PROPERTY CXX_STANDARD 20)
-endif()
-
-# TODO: Add tests and install targets if needed.
+add_executable(SFMLTest src/main.cpp)
+target_link_libraries(SFMLTest sfml-graphics sfml-window sfml-system)

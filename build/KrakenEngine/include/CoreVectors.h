@@ -22,6 +22,8 @@ namespace GLOBAL {
 		}
 
 		VECTOR3() = default;
+
+
 	};
 
 	struct VECTOR4 {
@@ -51,12 +53,25 @@ namespace GLOBAL {
 	};
 
 	struct TRANSFORM { 
+		public:
 		VECTOR3 position; QUATERNION rotation; VECTOR3 scale; 
 	
 		TRANSFORM(VECTOR3 _position, QUATERNION _rotation, VECTOR3 _scale) {
 			position = _position;
 			rotation = _rotation;
 			scale = _scale;
+		}
+
+		void setPosition(const VECTOR3& newPosition) {
+			position = newPosition;
+		}
+
+		void setRotation(const QUATERNION& newRotation) {
+			rotation = newRotation;
+		}
+
+		void setScale(const VECTOR3& newScale) {
+			scale = newScale;
 		}
 	};
 }
