@@ -3,7 +3,7 @@
 
 Will focus on the following things:
 
-Rendering (Vulkan && OpenGL(TBD))
+Rendering \n
 Mathematics
 Physics
 Gameplay
