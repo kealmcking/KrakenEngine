@@ -3,7 +3,7 @@
 
 Will focus on the following things:
 
-Rendering \n
+Rendering
 Mathematics
 Physics
 Gameplay
