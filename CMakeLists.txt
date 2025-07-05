@@ -1,22 +1,44 @@
-﻿cmake_minimum_required(VERSION 3.8)
+﻿cmake_minimum_required(VERSION 3.10)  # Updated to 3.10 to fix deprecation warning
 project(VulkanTest)
 
 set(CMAKE_CXX_STANDARD 17)
 
 # Platform-specific Vulkan setup
 if(WIN32)
-    # Always use your explicit path first
+    # Set explicit path to your Vulkan SDK
     set(VULKAN_SDK_PATH "C:/VulkanSDK/1.4.313.2")
     
-    # Set include and lib paths
+    # Set include path
     set(Vulkan_INCLUDE_DIR "${VULKAN_SDK_PATH}/Include")
-    set(Vulkan_LIBRARY "${VULKAN_SDK_PATH}/Lib/vulkan-1.lib")
     
-    # Verify path exists
+    # Verify the header exists
     if(NOT EXISTS "${Vulkan_INCLUDE_DIR}/vulkan/vulkan.h")
         message(FATAL_ERROR "Vulkan header not found at: ${Vulkan_INCLUDE_DIR}/vulkan/vulkan.h")
     endif()
     
+    # Set library path - FIXED HERE: Use directory path, not file path
+    set(Vulkan_LIBRARY_DIR "${VULKAN_SDK_PATH}/Lib")
+    
+    # Find Vulkan library - CORRECTED
+    find_library(Vulkan_LIBRARIES
+        NAMES vulkan-1  # Windows library name is vulkan-1.lib
+        PATHS ${Vulkan_LIBRARY_DIR}
+        REQUIRED
+        NO_DEFAULT_PATH
+    )
+    
+    # Add diagnostic message
+    message(STATUS "Using Vulkan SDK at: ${VULKAN_SDK_PATH}")
+    message(STATUS "Vulkan library found: ${Vulkan_LIBRARIES}")
+    
+    # Automatically copy Vulkan DLL
+    add_custom_command(TARGET VulkanTest POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            "${VULKAN_SDK_PATH}/Bin/vulkan-1.dll"
+            $<TARGET_FILE_DIR:VulkanTest>
+        COMMENT "Copying Vulkan DLL to output directory"
+    )
+
 elseif(APPLE)
     # macOS: Use Homebrew paths
     set(Vulkan_INCLUDE_DIR "/opt/homebrew/include")
@@ -34,13 +56,14 @@ find_path(Vulkan_INCLUDE_DIRS
 )
 
 find_library(Vulkan_LIBRARIES
-    NAMES vulkan
-    PATHS ${Vulkan_LIBRARY}
+    NAMES vulkan-1 vulkan
+    PATHS ${Vulkan_LIBRARY_DIR}
     REQUIRED
+    NO_DEFAULT_PATH
 )
 
 add_executable(VulkanTest src/main.cpp)
-target_include_directories(VulkanTest PRIVATE ${Vulkan_INCLUDE_DIRS})
+target_include_directories(VulkanTest PRIVATE ${Vulkan_INCLUDE_DIR})
 target_link_libraries(VulkanTest PRIVATE ${Vulkan_LIBRARIES})
 
 # macOS-specific frameworks
