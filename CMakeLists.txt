@@ -1,37 +1,60 @@
-﻿cmake_minimum_required(VERSION 3.10)  # Updated to 3.10 to fix deprecation warning
+cmake_minimum_required(VERSION 3.10)
 project(VulkanTest)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Platform-specific Vulkan setup
+# Collect all source and header files
+file(GLOB_RECURSE SRC_FILES "${CMAKE_SOURCE_DIR}/src/*.cpp")
+file(GLOB_RECURSE HEADER_FILES "${CMAKE_SOURCE_DIR}/include/*.h" "${CMAKE_SOURCE_DIR}/include/*.hpp")
+
+# Add the executable
+add_executable(VulkanTest ${SRC_FILES} ${HEADER_FILES})
+
+# Add the include directory for your headers
+target_include_directories(VulkanTest PRIVATE "${CMAKE_SOURCE_DIR}/include")
+
+# ----------------------------
+# GLFW Setup
+# ----------------------------
+
+# Prefer using system GLFW (Homebrew/vcpkg), fallback to subdirectory if needed
+option(USE_SYSTEM_GLFW "Use system-installed GLFW" ON)
+
+if(USE_SYSTEM_GLFW)
+    find_package(glfw3 REQUIRED)
+    target_link_libraries(VulkanTest PRIVATE glfw)
+else()
+    add_subdirectory(external/glfw)
+    target_link_libraries(VulkanTest PRIVATE glfw)
+endif()
+
+# ----------------------------
+# Vulkan Setup (Platform-specific)
+# ----------------------------
+
 if(WIN32)
-    # Set explicit path to your Vulkan SDK
-    set(VULKAN_SDK_PATH "C:/VulkanSDK/1.4.313.2")
-    
-    # Set include path
+    set(VULKAN_SDK_PATH "C:/VulkanSDK/1.3.243.0")  # Change this to your actual path
+
     set(Vulkan_INCLUDE_DIR "${VULKAN_SDK_PATH}/Include")
-    
-    # Verify the header exists
+    set(Vulkan_LIBRARY_DIR "${VULKAN_SDK_PATH}/Lib")
+
     if(NOT EXISTS "${Vulkan_INCLUDE_DIR}/vulkan/vulkan.h")
         message(FATAL_ERROR "Vulkan header not found at: ${Vulkan_INCLUDE_DIR}/vulkan/vulkan.h")
     endif()
-    
-    # Set library path - FIXED HERE: Use directory path, not file path
-    set(Vulkan_LIBRARY_DIR "${VULKAN_SDK_PATH}/Lib")
-    
-    # Find Vulkan library - CORRECTED
+
     find_library(Vulkan_LIBRARIES
-        NAMES vulkan-1  # Windows library name is vulkan-1.lib
+        NAMES vulkan-1
         PATHS ${Vulkan_LIBRARY_DIR}
         REQUIRED
         NO_DEFAULT_PATH
     )
-    
-    # Add diagnostic message
+
     message(STATUS "Using Vulkan SDK at: ${VULKAN_SDK_PATH}")
-    message(STATUS "Vulkan library found: ${Vulkan_LIBRARIES}")
-    
-    # Automatically copy Vulkan DLL
+    target_include_directories(VulkanTest PRIVATE ${Vulkan_INCLUDE_DIR})
+    target_link_libraries(VulkanTest PRIVATE ${Vulkan_LIBRARIES})
+
+    # Copy Vulkan DLL after build
     add_custom_command(TARGET VulkanTest POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
             "${VULKAN_SDK_PATH}/Bin/vulkan-1.dll"
@@ -40,61 +63,38 @@ if(WIN32)
     )
 
 elseif(APPLE)
-    # macOS: Use Homebrew paths
-    set(Vulkan_INCLUDE_DIR "/opt/homebrew/include")
-    set(Vulkan_LIBRARY "/opt/homebrew/lib/libvulkan.dylib")
-    
-else()
-    message(FATAL_ERROR "Unsupported platform")
-endif()
+    set(Vulkan_SDK_PATH "/opt/homebrew")  # Or /usr/local on Intel Macs
 
-# Find Vulkan components
-find_path(Vulkan_INCLUDE_DIRS
-    NAMES vulkan/vulkan.h
-    PATHS ${Vulkan_INCLUDE_DIR}
-    REQUIRED
-)
+    set(Vulkan_INCLUDE_DIR "${Vulkan_SDK_PATH}/include")
+    set(Vulkan_LIBRARY_DIR "${Vulkan_SDK_PATH}/lib")
 
-find_library(Vulkan_LIBRARIES
-    NAMES vulkan-1 vulkan
-    PATHS ${Vulkan_LIBRARY_DIR}
-    REQUIRED
-    NO_DEFAULT_PATH
-)
+    find_path(Vulkan_INCLUDE_DIR
+        NAMES vulkan/vulkan.h
+        PATHS ${Vulkan_INCLUDE_DIR}
+        REQUIRED
+    )
 
-add_executable(VulkanTest src/main.cpp)
-target_include_directories(VulkanTest PRIVATE ${Vulkan_INCLUDE_DIR})
-target_link_libraries(VulkanTest PRIVATE ${Vulkan_LIBRARIES})
+    find_library(Vulkan_LIBRARIES
+        NAMES vulkan
+        PATHS ${Vulkan_LIBRARY_DIR}
+        REQUIRED
+    )
 
-# macOS-specific frameworks
-if(APPLE)
+    message(STATUS "Using Vulkan SDK from: ${Vulkan_SDK_PATH}")
+    target_include_directories(VulkanTest PRIVATE ${Vulkan_INCLUDE_DIR})
+    target_link_libraries(VulkanTest PRIVATE ${Vulkan_LIBRARIES})
+
+    # macOS system frameworks required by MoltenVK
     find_library(COCOA_LIBRARY Cocoa)
     find_library(METAL_LIBRARY Metal)
     find_library(QUARTZCORE_LIBRARY QuartzCore)
+
     target_link_libraries(VulkanTest PRIVATE
         ${COCOA_LIBRARY}
         ${METAL_LIBRARY}
         ${QUARTZCORE_LIBRARY}
     )
-endif()
 
-# Additional Windows-specific setup
-if(WIN32)
-    # Automatically copy Vulkan DLL to build directory
-    add_custom_command(TARGET VulkanTest POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-            "${VULKAN_SDK_PATH}/Bin/vulkan-1.dll"
-            $<TARGET_FILE_DIR:VulkanTest>
-        COMMENT "Copying Vulkan DLL to output directory"
-    )
-    
-    # Set runtime library configuration
-    set(CompilerFlags
-        CMAKE_CXX_FLAGS
-        CMAKE_CXX_FLAGS_DEBUG
-        CMAKE_CXX_FLAGS_RELEASE
-    )
-    foreach(CompilerFlag ${CompilerFlags})
-        string(REPLACE "/MD" "/MT" ${CompilerFlag} "${${CompilerFlag}}")
-    endforeach()
+else()
+    message(FATAL_ERROR "Unsupported platform")
 endif()

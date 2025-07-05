@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'VulkanTest' in project 'VulkanTest'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'VulkanTest'
+Target 'ZERO_CHECK' in project 'VulkanTest' (no dependencies)

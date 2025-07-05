@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A1C48A665E794802F26DB7B1 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5C80F435A8234534B3178DEE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1586F15A82A3CFA654646886 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		B9E97A7F8C4AB24ADC22C203 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4E8D06C927C04A7FBA00EF68 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				ED46C504DE9E3AD473DFE09E /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				BBEE7BD0F15240F2AF2D7E76 /* PBXTargetDependency */,
+				4FB113BC563942F4A806BA56 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		14C7219004814AF18E11CA03 /* render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AD4E0FB6449463E81DE203D /* render.cpp */; };
+		27AEFB1A57B14278B11F3053 /* physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE98267CF0254E83B6EDD191 /* physics.cpp */; };
+		3C06FBA0AC0A4F9CA5BA50C9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C12EB738B9A943FE99E8118E /* main.cpp */; };
+		72EBE2C9B6A04B88B5976EE2 /* audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293945888D8B47D099E707A1 /* audio.cpp */; };
+		7C2AEC1F2E198737002B8E64 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AEC1E2E198737002B8E64 /* window.cpp */; };
+		F03A5265112C4A66A38481A3 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E4C70ABDE49399C7C8B5D /* input.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185D7D967C1F4EBAB751D9BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCB4502403AD4188BFE6583F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A805AB65B5476D823B604CD;
+			remoteInfo = VulkanTest;
+		};
+		B1E0C78F57B54DAF88BACF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCB4502403AD4188BFE6583F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C48A665E794802F26DB7B1;
+			remoteInfo = ZERO_CHECK;
+		};
+		C7D8EDFCBF0D4F699485AD7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCB4502403AD4188BFE6583F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C48A665E794802F26DB7B1;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07750F4E88734EA0B4800232 /* QuartzCore.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		0AD4E0FB6449463E81DE203D /* render.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = render.cpp; path = src/render.cpp; sourceTree = SOURCE_ROOT; };
+		23C4A8B27E5649C1A2C6D621 /* CoreVectors.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CoreVectors.h; path = include/MATH/CoreVectors.h; sourceTree = SOURCE_ROOT; };
+		286C1240565741D8A49957B6 /* PhysicsFunctions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PhysicsFunctions.h; path = include/MATH/PhysicsFunctions.h; sourceTree = SOURCE_ROOT; };
+		293945888D8B47D099E707A1 /* audio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = audio.cpp; path = src/audio.cpp; sourceTree = SOURCE_ROOT; };
+		2AC5C862F5834C7FAFDF8B0F /* VulkanTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = VulkanTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE4619B615D4D66BAF2BE97 /* MathFunctions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MathFunctions.h; path = include/MATH/MathFunctions.h; sourceTree = SOURCE_ROOT; };
+		5DAF47A26A454C819CB6CC8B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5E6431CBC10442E797163C3A /* Cocoa.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		780992F6A1C640C7B6360D6F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7C2AEC1C2E1986E7002B8E64 /* render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = render.h; path = include/render.h; sourceTree = "<group>"; };
+		7C2AEC1D2E19872B002B8E64 /* window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = window.h; path = include/window.h; sourceTree = "<group>"; };
+		7C2AEC1E2E198737002B8E64 /* window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = window.cpp; path = src/window.cpp; sourceTree = "<group>"; };
+		BC9E4C70ABDE49399C7C8B5D /* input.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = input.cpp; path = src/input.cpp; sourceTree = SOURCE_ROOT; };
+		C12EB738B9A943FE99E8118E /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		CE98267CF0254E83B6EDD191 /* physics.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = physics.cpp; path = src/physics.cpp; sourceTree = SOURCE_ROOT; };
+		D8B8333CF1D74C95B1CAFC9C /* Metal.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Metal.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks/Metal.framework; sourceTree = "<absolute>"; };
+		EDAEE32C8C6E4CB58E217B9F /* main.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = main.h; path = include/main.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6CDFA58F81042A1ADB8513A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0392AE18B3E44CE1B4F9507A /* VulkanTest */ = {
+			isa = PBXGroup;
+			children = (
+				6ACBA317BDD04042A7D35BC4 /* Source Files */,
+				554E97039D1D44E38EB2080F /* Header Files */,
+				780992F6A1C640C7B6360D6F /* CMakeLists.txt */,
+			);
+			name = VulkanTest;
+			sourceTree = "<group>";
+		};
+		0C8BDFEAE1AB49CD87E4DE91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		18585F818704435CB31979D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AC5C862F5834C7FAFDF8B0F /* VulkanTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		554E97039D1D44E38EB2080F /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				23C4A8B27E5649C1A2C6D621 /* CoreVectors.h */,
+				3DE4619B615D4D66BAF2BE97 /* MathFunctions.h */,
+				286C1240565741D8A49957B6 /* PhysicsFunctions.h */,
+				EDAEE32C8C6E4CB58E217B9F /* main.h */,
+				7C2AEC1C2E1986E7002B8E64 /* render.h */,
+				7C2AEC1D2E19872B002B8E64 /* window.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		6ACBA317BDD04042A7D35BC4 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				293945888D8B47D099E707A1 /* audio.cpp */,
+				BC9E4C70ABDE49399C7C8B5D /* input.cpp */,
+				C12EB738B9A943FE99E8118E /* main.cpp */,
+				CE98267CF0254E83B6EDD191 /* physics.cpp */,
+				0AD4E0FB6449463E81DE203D /* render.cpp */,
+				7C2AEC1E2E198737002B8E64 /* window.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8DA9082200C84E7F955D1A48 = {
+			isa = PBXGroup;
+			children = (
+				0392AE18B3E44CE1B4F9507A /* VulkanTest */,
+				B6C8D0BAB5C348BEA71696A6 /* ALL_BUILD */,
+				18585F818704435CB31979D8 /* Products */,
+				BF344F3C025744CF8562445F /* Frameworks */,
+				0C8BDFEAE1AB49CD87E4DE91 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		B6C8D0BAB5C348BEA71696A6 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				B84939D6470F4FD188607AF9 /* CMake Rules */,
+				5DAF47A26A454C819CB6CC8B /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B84939D6470F4FD188607AF9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		BF344F3C025744CF8562445F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E6431CBC10442E797163C3A /* Cocoa.framework */,
+				D8B8333CF1D74C95B1CAFC9C /* Metal.framework */,
+				07750F4E88734EA0B4800232 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A805AB65B5476D823B604CD /* VulkanTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EB20C01C5CA4487BE7CBC59 /* Build configuration list for PBXNativeTarget "VulkanTest" */;
+			buildPhases = (
+				DB71598E32A043439AF3AFA8 /* Sources */,
+				F6CDFA58F81042A1ADB8513A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC888FADD48F46B2BD4ECF8A /* PBXTargetDependency */,
+			);
+			name = VulkanTest;
+			productName = VulkanTest;
+			productReference = 2AC5C862F5834C7FAFDF8B0F /* VulkanTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCB4502403AD4188BFE6583F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1630;
+			};
+			buildConfigurationList = 65016E3432C04F2EBF791CC9 /* Build configuration list for PBXProject "VulkanTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DA9082200C84E7F955D1A48;
+			projectDirPath = /Users/keagonking/Documents/GitHub/KrakenEngine;
+			projectRoot = "";
+			targets = (
+				B9E97A7F8C4AB24ADC22C203 /* ALL_BUILD */,
+				6A805AB65B5476D823B604CD /* VulkanTest */,
+				A1C48A665E794802F26DB7B1 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1586F15A82A3CFA654646886 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/keagonking/Documents/GitHub/KrakenEngine/build/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/keagonking/Documents/GitHub/KrakenEngine/build\n  make -f /Users/keagonking/Documents/GitHub/KrakenEngine/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/keagonking/Documents/GitHub/KrakenEngine/build\n  make -f /Users/keagonking/Documents/GitHub/KrakenEngine/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/keagonking/Documents/GitHub/KrakenEngine/build\n  make -f /Users/keagonking/Documents/GitHub/KrakenEngine/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/keagonking/Documents/GitHub/KrakenEngine/build\n  make -f /Users/keagonking/Documents/GitHub/KrakenEngine/build/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED46C504DE9E3AD473DFE09E /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/keagonking/Documents/GitHub/KrakenEngine/build/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/keagonking/Documents/GitHub/KrakenEngine/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/keagonking/Documents/GitHub/KrakenEngine/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/keagonking/Documents/GitHub/KrakenEngine/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/keagonking/Documents/GitHub/KrakenEngine/build\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB71598E32A043439AF3AFA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72EBE2C9B6A04B88B5976EE2 /* audio.cpp in Sources */,
+				F03A5265112C4A66A38481A3 /* input.cpp in Sources */,
+				3C06FBA0AC0A4F9CA5BA50C9 /* main.cpp in Sources */,
+				7C2AEC1F2E198737002B8E64 /* window.cpp in Sources */,
+				27AEFB1A57B14278B11F3053 /* physics.cpp in Sources */,
+				14C7219004814AF18E11CA03 /* render.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FB113BC563942F4A806BA56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C48A665E794802F26DB7B1 /* ZERO_CHECK */;
+			targetProxy = B1E0C78F57B54DAF88BACF95 /* PBXContainerItemProxy */;
+		};
+		BBEE7BD0F15240F2AF2D7E76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A805AB65B5476D823B604CD /* VulkanTest */;
+			targetProxy = 185D7D967C1F4EBAB751D9BD /* PBXContainerItemProxy */;
+		};
+		CC888FADD48F46B2BD4ECF8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C48A665E794802F26DB7B1 /* ZERO_CHECK */;
+			targetProxy = C7D8EDFCBF0D4F699485AD7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3720DD2A41E4415E94962983 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		395686E3C18E42A1986656D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		418EFEAB400D48279AB9DE85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/keagonking/Documents/GitHub/KrakenEngine/build/build;
+			};
+			name = Release;
+		};
+		58364B0E14B54BFA9B5260EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/keagonking/Documents/GitHub/KrakenEngine/build/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/keagonking/Documents/GitHub/KrakenEngine/include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/opt/homebrew/lib,
+					/usr/local/lib,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/opt/homebrew/lib/libglfw.3.4.dylib,
+					/usr/local/lib/libvulkan.dylib,
+					"-framework",
+					Cocoa,
+					"-framework",
+					Metal,
+					"-framework",
+					QuartzCore,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = VulkanTest;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					"$(inherited)",
+				);
+				TARGET_TEMP_DIR = "/Users/keagonking/Documents/GitHub/KrakenEngine/build/build/VulkanTest.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		59FDCEC43CC74DF2B63AE2F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include/**";
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5F26A9DAAEF940E29656D3DE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include/**";
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		666A8609573A4100B526CED8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/keagonking/Documents/GitHub/KrakenEngine/build/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/keagonking/Documents/GitHub/KrakenEngine/include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/opt/homebrew/lib,
+					/usr/local/lib,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/opt/homebrew/lib/libglfw.3.4.dylib,
+					/usr/local/lib/libvulkan.dylib,
+					"-framework",
+					Cocoa,
+					"-framework",
+					Metal,
+					"-framework",
+					QuartzCore,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = VulkanTest;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					"$(inherited)",
+				);
+				TARGET_TEMP_DIR = "/Users/keagonking/Documents/GitHub/KrakenEngine/build/build/VulkanTest.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		6C6CE2AB48D54660B44CA187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		71B3351E04A14F7CBBF08D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = /Users/keagonking/Documents/GitHub/KrakenEngine/build/build;
+			};
+			name = Debug;
+		};
+		7CB7DEE8A4DB4D168373F90F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		9194E3BE11EA45A1A9B6A553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include/**";
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		A2AF7952471D446686668509 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/keagonking/Documents/GitHub/KrakenEngine/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/keagonking/Documents/GitHub/KrakenEngine/include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/opt/homebrew/lib,
+					/usr/local/lib,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/opt/homebrew/lib/libglfw.3.4.dylib,
+					/usr/local/lib/libvulkan.dylib,
+					"-framework",
+					Cocoa,
+					"-framework",
+					Metal,
+					"-framework",
+					QuartzCore,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = VulkanTest;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					"$(inherited)",
+				);
+				TARGET_TEMP_DIR = "/Users/keagonking/Documents/GitHub/KrakenEngine/build/build/VulkanTest.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		C42DA831BCA4428CB66E7E89 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/keagonking/Documents/GitHub/KrakenEngine/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		CB46E26E71754C3699396A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/keagonking/Documents/GitHub/KrakenEngine/build/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/keagonking/Documents/GitHub/KrakenEngine/include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/opt/homebrew/lib,
+					/usr/local/lib,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/opt/homebrew/lib/libglfw.3.4.dylib,
+					/usr/local/lib/libvulkan.dylib,
+					"-framework",
+					Cocoa,
+					"-framework",
+					Metal,
+					"-framework",
+					QuartzCore,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = VulkanTest;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					"$(inherited)",
+				);
+				TARGET_TEMP_DIR = "/Users/keagonking/Documents/GitHub/KrakenEngine/build/build/VulkanTest.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		F6DB50E10E4443B4B090846C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/keagonking/Documents/GitHub/KrakenEngine/build/build;
+			};
+			name = MinSizeRel;
+		};
+		FB6CEB9775D94882839E9B90 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include/**";
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EB20C01C5CA4487BE7CBC59 /* Build configuration list for PBXNativeTarget "VulkanTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB46E26E71754C3699396A20 /* Debug */,
+				58364B0E14B54BFA9B5260EB /* Release */,
+				666A8609573A4100B526CED8 /* MinSizeRel */,
+				A2AF7952471D446686668509 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4E8D06C927C04A7FBA00EF68 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59FDCEC43CC74DF2B63AE2F5 /* Debug */,
+				9194E3BE11EA45A1A9B6A553 /* Release */,
+				5F26A9DAAEF940E29656D3DE /* MinSizeRel */,
+				FB6CEB9775D94882839E9B90 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5C80F435A8234534B3178DEE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395686E3C18E42A1986656D5 /* Debug */,
+				6C6CE2AB48D54660B44CA187 /* Release */,
+				7CB7DEE8A4DB4D168373F90F /* MinSizeRel */,
+				3720DD2A41E4415E94962983 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		65016E3432C04F2EBF791CC9 /* Build configuration list for PBXProject "VulkanTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71B3351E04A14F7CBBF08D66 /* Debug */,
+				418EFEAB400D48279AB9DE85 /* Release */,
+				F6DB50E10E4443B4B090846C /* MinSizeRel */,
+				C42DA831BCA4428CB66E7E89 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCB4502403AD4188BFE6583F /* Project object */;
+}
